@@ -1,0 +1,23 @@
+class Palindrome 
+{
+	public static void main(String[] args) 
+	{
+		//(forward and backward value is same)
+		int a=121;//yeh value pe operation perform ho rahe hai to div 10 toh last me 0 ho jayegi is liye use num me store kiya or jo changes hoge veh num me hoge a as it is rahegi.
+		int num=a;
+		int rev=0;
+		int rem=0;
+		while(num!=0){
+			rem=num%10;
+			rev=rev*10+rem;
+			num=num/10;
+		}
+		if (a==rev)
+		{
+			System.out.println("Palindrome Number");
+		}
+		else{
+			System.out.println("Not Palindrome Number");
+		}
+	}
+}
